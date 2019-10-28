@@ -10,13 +10,27 @@
         display: flex; 
         flex-direction: column;
         width: 20vw;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        text-align: left;
     }
 
     .card-name-input {
         display: flex;
         flex-direction: column; 
         width: 20vw;
+        flex-wrap: wrap;
+        text-align: left;
     }
 
-    
+    .expiration-date {
+        display: flex;
+        flex-direction: column;
+        width: 20vw;
+        border-radius: 10px;
+        flex-wrap: wrap;
+        text-align: left;
+    }
+
+
 }
