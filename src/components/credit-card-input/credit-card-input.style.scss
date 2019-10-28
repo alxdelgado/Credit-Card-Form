@@ -8,29 +8,55 @@
 
     .card-number-input {
         display: flex; 
-        flex-direction: column;
+        flex-direction: row;
         width: 20vw;
         border-radius: 10px;
         flex-wrap: wrap;
         text-align: left;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 18px;
     }
 
     .card-name-input {
         display: flex;
-        flex-direction: column; 
+        flex-direction: row; 
         width: 20vw;
         flex-wrap: wrap;
         text-align: left;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 18px;
     }
+    
 
     .expiration-date {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         width: 20vw;
         border-radius: 10px;
         flex-wrap: wrap;
         text-align: left;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 18px;
     }
 
+    input[type=text] {
+        box-sizing: border-box;
+        border-radius: 7px;
+    }
 
+    input[type=number] {
+        box-sizing: border-box;
+        border-radius: 7px;
+    }
+
+    input[type=month] {
+        box-sizing: border-box;
+        border-radius: 7px;
+    }
 }

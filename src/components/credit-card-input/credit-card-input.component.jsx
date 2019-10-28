@@ -7,6 +7,12 @@ import './credit-card-input.style.scss';
 class CreditCardInput extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            number: '',
+            name: '',
+            expirationDate: '' 
+        }
+
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -21,15 +27,15 @@ class CreditCardInput extends React.Component {
                 <form onSubmit={this.handleSubmit}>
                     <label className='card-number-input'>
                         Card Number:
-                        <input type='number' />
+                        <input type='number' placeholder='Card Number'/>
                     </label>
                     <label className='card-name-input'>
                         Card Name:
-                        <input type='text' />
+                        <input type='text' placeholder='Full Name' />
                     </label>
                     <label className='expiration-date'>
                         Expiration Date:
-                        <input type='month' />
+                        <input type='month' placeholder='Expiration Date' />
                     </label>
                 </form>
             </div>
