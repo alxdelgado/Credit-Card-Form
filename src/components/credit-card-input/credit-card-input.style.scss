@@ -1,0 +1,22 @@
+.credit-card-input_container {
+    background-color: whitesmoke;
+    height: 40vh;
+    width: 40vw;
+    display: inline-block;
+    margin-top: 3rem;
+    flex-direction: column;
+
+    .card-number-input {
+        display: flex; 
+        flex-direction: column;
+        width: 20vw;
+    }
+
+    .card-name-input {
+        display: flex;
+        flex-direction: column; 
+        width: 20vw;
+    }
+
+    
+}
