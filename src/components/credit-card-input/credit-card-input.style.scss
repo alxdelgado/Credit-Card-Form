@@ -6,12 +6,11 @@
     margin-top: 3rem;
     flex-direction: column;
 
-    .card-number-input {
+    .card-number {
         font-weight: 500;
-        line-height: 1;
+        line-height: 2;
         display: flex; 
-        flex-direction: row;
-        width: 20vw;
+        flex-direction: flex-start;
         border-radius: 10px;
         flex-wrap: wrap;
         text-align: left;
@@ -20,25 +19,32 @@
         padding-left: 20px;
         font-size: 18px;
         cursor: pointer;
+
+        .card-number-input {
+            width: 90%;
+        }
     }
 
-    .card-name-input {
+    .card-name {
         display: flex;
-        flex-direction: row; 
-        width: 20vw;
+        flex-direction: flex-start; 
         flex-wrap: wrap;
         text-align: left;
         justify-content: space-between;
         padding-top: 20px;
         padding-left: 20px;
         font-size: 18px;
+
+        .card-name-input {
+            width: 90%;
+        }
     }
     
 
     .expiration-date {
         display: flex;
         flex-direction: row;
-        width: 20vw;
+        width: 10vw;
         border-radius: 10px;
         flex-wrap: wrap;
         text-align: left;
@@ -46,20 +52,5 @@
         padding-top: 20px;
         padding-left: 20px;
         font-size: 18px;
-    }
-
-    input[type=text] {
-        box-sizing: border-box;
-        border-radius: 7px;
-    }
-
-    input[type=number] {
-        box-sizing: border-box;
-        border-radius: 7px;
-    }
-
-    input[type=month] {
-        box-sizing: border-box;
-        border-radius: 7px;
     }
 }

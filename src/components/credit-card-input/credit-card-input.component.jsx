@@ -26,17 +26,17 @@ class CreditCardInput extends React.Component {
         return (
             <div className='credit-card-input_container'>
                 <form onSubmit={this.handleSubmit}>
-                    <label className='card-number-input'>
+                    <label className='card-number'>
                         Card Number:
-                        <input type='number' placeholder='Card Number'/>
+                        <input className='card-number-input' type='number' placeholder='Card Number'/>
                     </label>
-                    <label className='card-name-input'>
+                    <label className='card-name'>
                         Card Name:
-                        <input type='text' placeholder='Full Name' />
+                        <input className='card-name-input' type='text' placeholder='Full Name' />
                     </label>
                     <label className='expiration-date'>
                         Expiration Date:
-                        <input type='month' placeholder='Expiration Date' />
+                        <input className='expiration-date-input' type='month' placeholder='Expiration Date' />
                     </label>
                     <SubmitButton />
                 </form>
