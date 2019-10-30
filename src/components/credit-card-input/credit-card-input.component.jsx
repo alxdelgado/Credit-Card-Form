@@ -1,5 +1,6 @@
 import React from 'react'; 
 import SubmitButton from '../submit-button/submit-button.component'; 
+import MonthSelector from '../month-selector/month-selector.component';
 
 import './credit-card-input.style.scss';
 
@@ -34,10 +35,11 @@ class CreditCardInput extends React.Component {
                         Card Name:
                         <input className='card-name-input' type='text' placeholder='Full Name' />
                     </label>
-                    <label className='expiration-date'>
+                    {/* <label className='expiration-date'>
                         Expiration Date:
                         <input className='expiration-date-input' type='month' placeholder='Expiration Date' />
-                    </label>
+                    </label> */}
+                    <MonthSelector />
                     <SubmitButton />
                 </form>
             </div>
