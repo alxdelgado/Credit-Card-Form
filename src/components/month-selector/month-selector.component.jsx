@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './month-selector.style.scss'; 
 
+
 // function MonthSelector({selectMonth}) {
 //     const [month, setMonth] = useState(selectMonth);
 //     return (
@@ -15,10 +16,42 @@ import './month-selector.style.scss';
 //     );
 // }
 
-const MonthSelector = (props) => ( 
-    <div className='month-selector-container'>
-        <FontAwesomeIcon icon="angle-down"/>
-    </div>
-); 
+class MonthSelector extends React.Component {
+    constructor(props) {
+        super(props); 
+
+        this.state = {
+            showMonths: false,
+        }
+
+        this.showMonths = this.showMonths.bind(this);
+    }
+
+    showMonths(event) {
+        event.preventDefault();
+
+        this.setState({ showMonths: true, })
+    }
+
+    render() {
+        return (
+            <div>
+                <button>Month</button>
+                {
+                    this.state.showMonths
+                    ? (
+                        <div>
+                            {/* write code for what the dropDownMenu will show. */}
+                        </div>
+                    )
+                    : (
+                        null
+                    )
+                } 
+            </div>
+        )
+    }
+}
+
 
 export default MonthSelector;
